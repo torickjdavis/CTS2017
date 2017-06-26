@@ -1,7 +1,7 @@
 # README
 # Torick J Davis | CTS 2017
 
-##Another update to ReadMe, trying new alias...
+##Another update to ReadMe, trying new alias...Hello, World!
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
