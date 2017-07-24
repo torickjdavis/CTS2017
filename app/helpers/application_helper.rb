@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting)
     end
   end
+  
+  def copyright_generator
+    DavisViewTool::Renderer.copyright "Torick Davis", "All Rights Reserved"
+  end
 end
