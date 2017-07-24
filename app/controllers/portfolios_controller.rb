@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+  before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
   layout "portfolio"
   def index
     @portfolio_items = Portfolio.all
@@ -26,12 +27,13 @@ class PortfoliosController < ApplicationController
   end
   
   def edit
-    @portfolio_item = Portfolio.find(params[:id])
+    #Lookup Item (via before action of: set_portfolio_item)
+    
     3.times { @portfolio_item.technologies.build }
   end
   
   def update
-    @portfolio_item = Portfolio.find(params[:id])
+    #Lookup Item (via before action of: set_portfolio_item)
     
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
@@ -43,12 +45,11 @@ class PortfoliosController < ApplicationController
   end
   
   def show
-    @portfolio_item = Portfolio.find(params[:id])
+    #Lookup Item (via before action of: set_portfolio_item)
   end
   
   def destroy
-    #Lookup Item
-    @portfolio_item = Portfolio.find(params[:id])
+    #Lookup Item (via before action of: set_portfolio_item)
     #Destroy/delete record
     @portfolio_item.destroy
     #Redirect
@@ -65,5 +66,9 @@ class PortfoliosController < ApplicationController
                                       :body,
                                       technologies_attributes: [:name]
                                      )
+  end
+  
+  def set_portfolio_item
+    @portfolio_item = Portfolio.find(params[:id])
   end
 end

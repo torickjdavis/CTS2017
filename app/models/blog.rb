@@ -6,4 +6,8 @@ class Blog < ApplicationRecord
   validates_presence_of :title, :body
   
   belongs_to :topic
+  
+  def featured_blogs # Custom Scope
+    self.limit(2)
+  end
 end
