@@ -1,12 +1,26 @@
 <h1>Contact</h1>
 <h2>Pages#contact</h2>
+<hr>
+<div class="row">
+  <div class="col-md-6">
+    <p>Would you like to work together?</p>
+    <p>Call me at: <%= number_to_phone "0000000000" %> (not my real number)</p>
+    <a href="mailto:torickjdavis@gmail.com?subject=PortfolioContact">Email Me</a>
+  </div>
+  <div class="col-md-6">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.1121031854227!2d-111.79756968491628!3d40.384207979368945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d816d34a9c00d%3A0x11b6fd4d208168e2!2s350+N+100+E%2C+American+Fork%2C+UT+84003!5e0!3m2!1sen!2sus!4v1501864886690" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</div>
 
-<p><%= number_to_phone "5555555555" %></p>
 
-<p><%= number_to_currency "150" %></p>
-
-<p><%= number_to_percentage "80.4" %></p>
-
-<p><%= number_with_delimiter "150123145697" %></p>
-
-<p>If you really, really need to contact me...you're looking in the wrong place. Sorry</p>
+<div hidden>
+  <p><%= number_to_phone "5555555555" %></p>
+  
+  <p><%= number_to_currency "150" %></p>
+  
+  <p><%= number_to_percentage "80.4" %></p>
+  
+  <p><%= number_with_delimiter "150123145697" %></p>
+  
+  <p>If you really, really need to contact me...you're looking in the wrong place. Sorry</p>
+</div>
