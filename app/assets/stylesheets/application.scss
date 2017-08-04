@@ -162,3 +162,24 @@ body {
   }
 }
 //END COVER CSS
+
+/***
+* CUSTOM STYLES
+*/
+
+.card-block {
+  color:black;
+}
+
+.form-group {
+  text-align: left;
+}
+
+// Fix "Fixed" Position of Mast Elements
+.mastfoot, .masthead {
+  position:relative;
+}
+
+.auth-links a {
+  color:black;
+}
