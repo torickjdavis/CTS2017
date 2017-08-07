@@ -57,3 +57,5 @@ gem 'devise', '~> 4.3'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'davis_view_tool', git: 'https://github.com/torickjdavis/davis_view_tool' # Left as Git as to note post to RubyGems
 gem 'petergate', '~> 1.7.0'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+gem 'kaminari', '~> 1.0', '>= 1.0.1'

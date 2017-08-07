@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+@import "font-awesome";
 // Bootstrap Blog
 /*
  * Globals
@@ -170,3 +171,8 @@ h6, .h6 {
   margin-bottom: 0;
 }
 //End Bootstrap Blog
+
+/* CUSTOM STYLES */
+.social-links {
+  font-size: 1.5em;
+}

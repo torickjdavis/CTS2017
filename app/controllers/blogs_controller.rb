@@ -6,7 +6,9 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all #Could be Blog.featured_blogs to connect to the scope
+    @blogs = Blog.page(params[:page]).per(5) 
+    #Could be Blog.featured_blogs to connect to the scope
+    #Or Blog.all
     @page_title = "My Portfolio Blog"
   end
 
